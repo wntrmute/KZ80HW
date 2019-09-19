@@ -1,0 +1,3 @@
+Arduino EEPROM programmer.
+
+One variant is for the W27C512 EEPROM, one is for the AT28C256 EEPROM.
