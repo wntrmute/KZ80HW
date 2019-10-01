@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -13,9 +13,9 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -4639,23 +4639,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="0603">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 <package name="0805">
 <description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
@@ -4684,6 +4667,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+<package name="0603">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -4995,6 +4995,17 @@ uC used in the Arduino&lt;br&gt;
 <pin name="RXD" x="-10.16" y="-5.08" length="short"/>
 <pin name="RTS" x="-10.16" y="-7.62" length="short"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.524" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VCC">
+<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FTDIUSBCABLE" prefix="CN" uservalue="yes">
@@ -5013,6 +5024,32 @@ uC used in the Arduino&lt;br&gt;
 <connect gate="G$1" pin="TXD" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND">
+<description>&lt;b&gt;GND&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;VCC SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7521,6 +7558,45 @@ tDocu shows location of lever when unlocked.
 <text x="-15.24" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
 <text x="-15.24" y="-1.27" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DIL28-6" urn="urn:adsk.eagle:footprint:770/1">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
+<wire x1="-17.653" y1="-1.27" x2="-17.653" y2="-6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="1.27" x2="-17.653" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<wire x1="17.653" y1="-6.604" x2="17.653" y2="6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="6.604" x2="-17.653" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="6.604" x2="17.653" y2="6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="-6.604" x2="17.653" y2="-6.604" width="0.1524" layer="21"/>
+<pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-17.78" y="-6.35" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-14.605" y="-0.9398" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AT28C256">
@@ -7602,6 +7678,154 @@ tDocu shows location of lever when unlocked.
 <technology name=""/>
 </technologies>
 </device>
+<device name="DIL28" package="DIL28-6">
+<connects>
+<connect gate="G$1" pin="/CE" pad="20"/>
+<connect gate="G$1" pin="/OE" pad="22"/>
+<connect gate="G$1" pin="/WE" pad="27"/>
+<connect gate="G$1" pin="A0" pad="10"/>
+<connect gate="G$1" pin="A1" pad="9"/>
+<connect gate="G$1" pin="A10" pad="21"/>
+<connect gate="G$1" pin="A11" pad="23"/>
+<connect gate="G$1" pin="A12" pad="2"/>
+<connect gate="G$1" pin="A13" pad="26"/>
+<connect gate="G$1" pin="A14" pad="1"/>
+<connect gate="G$1" pin="A2" pad="8"/>
+<connect gate="G$1" pin="A3" pad="7"/>
+<connect gate="G$1" pin="A4" pad="6"/>
+<connect gate="G$1" pin="A5" pad="5"/>
+<connect gate="G$1" pin="A6" pad="4"/>
+<connect gate="G$1" pin="A7" pad="3"/>
+<connect gate="G$1" pin="A8" pad="25"/>
+<connect gate="G$1" pin="A9" pad="24"/>
+<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="I/O0" pad="11"/>
+<connect gate="G$1" pin="I/O1" pad="12"/>
+<connect gate="G$1" pin="I/O2" pad="13"/>
+<connect gate="G$1" pin="I/O3" pad="15"/>
+<connect gate="G$1" pin="I/O4" pad="16"/>
+<connect gate="G$1" pin="I/O5" pad="17"/>
+<connect gate="G$1" pin="I/O6" pad="18"/>
+<connect gate="G$1" pin="I/O7" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="74ttl-din" urn="urn:adsk.eagle:library:84">
+<description>&lt;b&gt;TTL Devices with DIN Symbols&lt;/b&gt;&lt;p&gt;
+CadSoft and the author do not warrant that this library is free from error
+or will meet your specific requirements.&lt;p&gt;
+&lt;author&gt;Created by Holger Bettenbühl, hol.bet.@rhein-main.net&lt;/author&gt;</description>
+<packages>
+<package name="DIL14" urn="urn:adsk.eagle:footprint:16136/1" library_version="3">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="DIL14" urn="urn:adsk.eagle:package:16407/2" type="model" library_version="3">
+<description>Dual In Line Package</description>
+<packageinstances>
+<packageinstance name="DIL14"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="+UB" urn="urn:adsk.eagle:symbol:1255/1" library_version="3">
+<circle x="0" y="-0.635" radius="0.635" width="0.1524" layer="94"/>
+<text x="1.27" y="-1.27" size="1.524" layer="95">&gt;NAME</text>
+<pin name="+UB" x="0" y="2.54" visible="pad" length="short" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="-UB" urn="urn:adsk.eagle:symbol:1256/1" library_version="3">
+<wire x1="0" y1="-0.635" x2="0" y2="0.635" width="0" layer="94"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="0" width="0" layer="94"/>
+<circle x="0" y="0.635" radius="0.635" width="0.1524" layer="94"/>
+<text x="1.27" y="0" size="1.524" layer="95">&gt;NAME</text>
+<pin name="-UB" x="0" y="-2.54" visible="pad" length="short" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="04" urn="urn:adsk.eagle:symbol:1260/1" library_version="3">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="5.715" size="2.032" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-8.255" size="2.032" layer="96">&gt;VALUE</text>
+<text x="-0.3302" y="1.905" size="2.032" layer="94">1</text>
+<pin name="A" x="-10.16" y="0" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="74*04" urn="urn:adsk.eagle:component:1468/3" prefix="V" library_version="3">
+<description>Hex &lt;b&gt;INVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="/+UB" symbol="+UB" x="15.24" y="12.7" addlevel="request"/>
+<gate name="/-UB" symbol="-UB" x="15.24" y="5.08" addlevel="request"/>
+<gate name="/1" symbol="04" x="0" y="0" swaplevel="1"/>
+<gate name="/2" symbol="04" x="0" y="17.78" swaplevel="1"/>
+<gate name="/3" symbol="04" x="0" y="35.56" swaplevel="1"/>
+<gate name="/4" symbol="04" x="-25.4" y="0" swaplevel="1"/>
+<gate name="/5" symbol="04" x="-25.4" y="17.78" swaplevel="1"/>
+<gate name="/6" symbol="04" x="-25.4" y="35.56" swaplevel="1"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="/+UB" pin="+UB" pad="14"/>
+<connect gate="/-UB" pin="-UB" pad="7"/>
+<connect gate="/1" pin="A" pad="1"/>
+<connect gate="/1" pin="Y" pad="2"/>
+<connect gate="/2" pin="A" pad="3"/>
+<connect gate="/2" pin="Y" pad="4"/>
+<connect gate="/3" pin="A" pad="5"/>
+<connect gate="/3" pin="Y" pad="6"/>
+<connect gate="/4" pin="A" pad="9"/>
+<connect gate="/4" pin="Y" pad="8"/>
+<connect gate="/5" pin="A" pad="11"/>
+<connect gate="/5" pin="Y" pad="10"/>
+<connect gate="/6" pin="A" pad="13"/>
+<connect gate="/6" pin="Y" pad="12"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -7617,7 +7841,7 @@ tDocu shows location of lever when unlocked.
 </class>
 </classes>
 <parts>
-<part name="U$1" library="wntrmute" deviceset="AT28C256" device=""/>
+<part name="U$1" library="wntrmute" deviceset="AT28C256" device="DIL28" value="AT28C256DIL28"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -7625,8 +7849,8 @@ tDocu shows location of lever when unlocked.
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="050-024X044" package3d_urn="urn:adsk.eagle:package:23643/1" value="0.1uF"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="4.7K"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="4.7K"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value=" "/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value=" "/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="U1" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA328P_PDIP" device="" value="328P"/>
 <part name="CN1" library="microbuilder" deviceset="FTDIUSBCABLE" device=""/>
@@ -7651,6 +7875,10 @@ tDocu shows location of lever when unlocked.
 <part name="IC2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="MCP23008" device="/P" package3d_urn="urn:adsk.eagle:package:6240756/1"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="050-024X044" package3d_urn="urn:adsk.eagle:package:23643/1" value="0.1uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="050-024X044" package3d_urn="urn:adsk.eagle:package:23643/1" value="0.1uF"/>
+<part name="V1" library="74ttl-din" library_urn="urn:adsk.eagle:library:84" deviceset="74*04" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
+<part name="U$2" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$3" library="microbuilder" deviceset="GND" device=""/>
+<part name="P+1" library="microbuilder" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7659,7 +7887,6 @@ tDocu shows location of lever when unlocked.
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="76.2" y="27.94" smashed="yes">
-<attribute name="NAME" x="76.2" y="30.48" size="1.778" layer="95"/>
 <attribute name="VALUE" x="76.2" y="-25.4" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="-55.88" y="30.48" smashed="yes">
@@ -7707,20 +7934,20 @@ tDocu shows location of lever when unlocked.
 <attribute name="NAME" x="-72.009" y="20.828" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="-66.675" y="20.828" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D2" gate="D1" x="50.8" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.229" y="55.372" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="48.895" y="55.372" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+<instance part="D2" gate="D1" x="-5.08" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="-9.652" y="51.689" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-9.652" y="46.355" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="D3" gate="D1" x="58.42" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="61.849" y="55.372" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="56.515" y="55.372" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+<instance part="D3" gate="D1" x="-5.08" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="-9.652" y="61.849" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-9.652" y="56.515" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="D4" gate="D1" x="68.58" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="72.009" y="55.372" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="66.675" y="55.372" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+<instance part="D4" gate="D1" x="-5.08" y="68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="-9.652" y="72.009" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-9.652" y="66.675" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="GND1" gate="1" x="27.94" y="45.72" smashed="yes">
-<attribute name="VALUE" x="27.94" y="45.466" size="1.778" layer="96" align="top-center"/>
+<instance part="GND1" gate="1" x="-20.32" y="43.18" smashed="yes">
+<attribute name="VALUE" x="-20.32" y="42.926" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="-63.5" y="99.06" smashed="yes">
 <attribute name="NAME" x="-63.5" y="100.584" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -7735,17 +7962,17 @@ tDocu shows location of lever when unlocked.
 <instance part="GND5" gate="1" x="-50.8" y="83.82" smashed="yes">
 <attribute name="VALUE" x="-50.8" y="83.566" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="R4" gate="G$1" x="50.8" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="49.276" y="40.64" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="52.324" y="40.64" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R4" gate="G$1" x="2.54" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.54" y="46.736" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="2.54" y="49.784" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="R5" gate="G$1" x="58.42" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.896" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="59.944" y="43.18" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R5" gate="G$1" x="2.54" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.54" y="56.896" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="2.54" y="59.944" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="R6" gate="G$1" x="68.58" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="67.056" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="70.104" y="43.18" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R6" gate="G$1" x="2.54" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.54" y="67.056" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="2.54" y="70.104" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
 <instance part="R7" gate="G$1" x="-68.58" y="15.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="-70.104" y="15.24" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -7779,6 +8006,45 @@ tDocu shows location of lever when unlocked.
 <instance part="C4" gate="G$1" x="45.72" y="116.84" smashed="yes">
 <attribute name="NAME" x="46.736" y="117.475" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.736" y="112.649" size="1.778" layer="96"/>
+</instance>
+<instance part="V1" gate="/1" x="20.32" y="68.58" smashed="yes">
+<attribute name="NAME" x="15.24" y="74.295" size="2.032" layer="95"/>
+<attribute name="VALUE" x="15.24" y="60.325" size="2.032" layer="96"/>
+</instance>
+<instance part="V1" gate="/2" x="33.02" y="58.42" smashed="yes">
+<attribute name="NAME" x="27.94" y="64.135" size="2.032" layer="95"/>
+<attribute name="VALUE" x="27.94" y="50.165" size="2.032" layer="96"/>
+</instance>
+<instance part="V1" gate="/3" x="48.26" y="48.26" smashed="yes">
+<attribute name="NAME" x="43.18" y="53.975" size="2.032" layer="95"/>
+<attribute name="VALUE" x="43.18" y="40.005" size="2.032" layer="96"/>
+</instance>
+<instance part="V1" gate="/4" x="121.92" y="99.06" smashed="yes">
+<attribute name="NAME" x="116.84" y="104.775" size="2.032" layer="95"/>
+<attribute name="VALUE" x="116.84" y="90.805" size="2.032" layer="96"/>
+</instance>
+<instance part="V1" gate="/5" x="121.92" y="81.28" smashed="yes">
+<attribute name="NAME" x="116.84" y="86.995" size="2.032" layer="95"/>
+<attribute name="VALUE" x="116.84" y="73.025" size="2.032" layer="96"/>
+</instance>
+<instance part="V1" gate="/6" x="121.92" y="63.5" smashed="yes">
+<attribute name="NAME" x="116.84" y="69.215" size="2.032" layer="95"/>
+<attribute name="VALUE" x="116.84" y="55.245" size="2.032" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="109.22" y="50.8" smashed="yes">
+<attribute name="VALUE" x="107.696" y="48.26" size="1.27" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="157.48" y="76.2" smashed="yes">
+<attribute name="VALUE" x="155.956" y="73.66" size="1.27" layer="96"/>
+</instance>
+<instance part="P+1" gate="VCC" x="157.48" y="106.68" smashed="yes">
+<attribute name="VALUE" x="155.956" y="107.696" size="1.27" layer="96"/>
+</instance>
+<instance part="V1" gate="/+UB" x="157.48" y="96.52" smashed="yes">
+<attribute name="NAME" x="158.75" y="95.25" size="1.524" layer="95"/>
+</instance>
+<instance part="V1" gate="/-UB" x="157.48" y="86.36" smashed="yes">
+<attribute name="NAME" x="158.75" y="86.36" size="1.524" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -7894,6 +8160,11 @@ tDocu shows location of lever when unlocked.
 <wire x1="45.72" y1="119.38" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
 <junction x="45.72" y="144.78"/>
 </segment>
+<segment>
+<pinref part="V1" gate="/+UB" pin="+UB"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="157.48" y1="99.06" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -7941,21 +8212,6 @@ tDocu shows location of lever when unlocked.
 <wire x1="53.34" y1="-22.86" x2="53.34" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-22.86" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="53.34" y="-22.86"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="27.94" y1="48.26" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="D4" gate="D1" pin="C"/>
-<wire x1="50.8" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="60.96" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="D3" gate="D1" pin="C"/>
-<wire x1="58.42" y1="55.88" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-<junction x="58.42" y="60.96"/>
-<pinref part="D2" gate="D1" pin="C"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<junction x="50.8" y="60.96"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -8025,6 +8281,39 @@ tDocu shows location of lever when unlocked.
 <pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-50.8" y1="88.9" x2="-50.8" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="D4" gate="D1" pin="C"/>
+<wire x1="-20.32" y1="45.72" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="48.26" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="58.42" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="68.58" x2="-10.16" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="D3" gate="D1" pin="C"/>
+<wire x1="-10.16" y1="58.42" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-20.32" y="58.42"/>
+<pinref part="D2" gate="D1" pin="C"/>
+<wire x1="-10.16" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-20.32" y="48.26"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="109.22" y1="53.34" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="V1" gate="/4" pin="A"/>
+<wire x1="109.22" y1="63.5" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="81.28" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="V1" gate="/5" pin="A"/>
+<wire x1="111.76" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<junction x="109.22" y="81.28"/>
+<pinref part="V1" gate="/6" pin="A"/>
+<wire x1="111.76" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
+<junction x="109.22" y="63.5"/>
+</segment>
+<segment>
+<pinref part="V1" gate="/-UB" pin="-UB"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -8247,50 +8536,6 @@ tDocu shows location of lever when unlocked.
 <wire x1="91.44" y1="109.22" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="109.22" y1="35.56" x2="109.22" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="/WE"/>
-<wire x1="109.22" y1="2.54" x2="99.06" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="PD2(INT0)"/>
-<wire x1="50.8" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<junction x="50.8" y="35.56"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="/OE"/>
-<wire x1="99.06" y1="0" x2="111.76" y2="0" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="0" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="PD3(INT1)"/>
-<wire x1="58.42" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="33.02" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="38.1" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
-<junction x="58.42" y="33.02"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="/CE"/>
-<wire x1="114.3" y1="30.48" x2="114.3" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="-2.54" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="30.48" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="30.48" x2="15.24" y2="0" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="PD4(XCK/T0)"/>
-<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="38.1" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
-<junction x="68.58" y="30.48"/>
-</segment>
-</net>
 <net name="A3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A3"/>
@@ -8339,13 +8584,6 @@ tDocu shows location of lever when unlocked.
 <junction x="-2.54" y="142.24"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="D2" gate="D1" pin="A"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="48.26" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="D3" gate="D1" pin="A"/>
@@ -8389,6 +8627,81 @@ tDocu shows location of lever when unlocked.
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPB7"/>
 <wire x1="35.56" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D2" gate="D1" pin="A"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="V1" gate="/3" pin="A"/>
+<wire x1="7.62" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="V1" gate="/2" pin="A"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="V1" gate="/1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="V1" gate="/3" pin="Y"/>
+<wire x1="58.42" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PD2(INT0)"/>
+<wire x1="2.54" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="35.56" x2="109.22" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="/WE"/>
+<wire x1="109.22" y1="2.54" x2="99.06" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="48.26" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
+<junction x="71.12" y="35.56"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="V1" gate="/2" pin="Y"/>
+<wire x1="43.18" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="/OE"/>
+<wire x1="99.06" y1="0" x2="111.76" y2="0" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="0" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PD3(INT1)"/>
+<wire x1="111.76" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="33.02" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="58.42" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<junction x="73.66" y="33.02"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="V1" gate="/1" pin="Y"/>
+<wire x1="30.48" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="/CE"/>
+<wire x1="114.3" y1="30.48" x2="114.3" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-2.54" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="30.48" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="30.48" x2="15.24" y2="0" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PD4(XCK/T0)"/>
+<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="68.58" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<junction x="76.2" y="30.48"/>
 </segment>
 </net>
 </nets>

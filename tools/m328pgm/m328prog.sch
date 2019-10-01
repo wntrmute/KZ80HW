@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -4031,14 +4031,19 @@ tDocu shows location of lever when unlocked.
 <wire x1="-33.02" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-33.02" y="38.1"/>
 <wire x1="7.62" y1="40.64" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="111.76" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="66.04" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
 <wire x1="22.86" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="38.1" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <junction x="7.62" y="40.64"/>
+<pinref part="CN1" gate="G$1" pin="RTS"/>
+<wire x1="114.3" y1="-15.24" x2="111.76" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-15.24" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<junction x="111.76" y="66.04"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4068,9 +4073,9 @@ tDocu shows location of lever when unlocked.
 <segment>
 <pinref part="U1" gate="G$1" pin="PD1(TXD)"/>
 <wire x1="66.04" y1="15.24" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="15.24" x2="93.98" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-15.24" x2="114.3" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="RTS"/>
+<pinref part="CN1" gate="G$1" pin="TXD"/>
+<wire x1="114.3" y1="-10.16" x2="93.98" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-10.16" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
