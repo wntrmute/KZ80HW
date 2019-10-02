@@ -10,3 +10,4 @@ This is the actual KZ80 hardware.
   unsuitable for CP/M.
 + power: the power board provides the clock, a clock+5V connection to
   the mainboard, and a 3.3/5V connection to the I/O board.
++ sioboard: dual serial via a SIO/2.

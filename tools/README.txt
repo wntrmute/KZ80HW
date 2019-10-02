@@ -19,5 +19,6 @@ This contains support hardware, such as programmers.
   + Note: clock speed is derived from the RC2014 bus, and must
     be 7.4 MHz for 115200 baud operation.
 + SIO2_dev: RC2014 SIO/2 converted to KZ80 interconnect.
++ sercon: standalone serial console
 
 All designs except SIO2_dev are on order but are, as of yet, untested.
