@@ -7883,7 +7883,6 @@ or will meet your specific requirements.&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="137.16" y="-15.24" size="2.54" layer="94">Arduino EEPROM Programmer</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="76.2" y="27.94" smashed="yes">
@@ -8549,10 +8548,10 @@ or will meet your specific requirements.&lt;p&gt;
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PD1(TXD)"/>
-<wire x1="17.78" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="TXD"/>
-<wire x1="17.78" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="7.62" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="RXD"/>
+<wire x1="22.86" y1="10.16" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -8600,13 +8599,6 @@ or will meet your specific requirements.&lt;p&gt;
 <segment>
 <pinref part="D1" gate="D1" pin="C"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="CN1" gate="G$1" pin="RXD"/>
-<pinref part="U1" gate="U1" pin="PD0(RXD)"/>
-<wire x1="38.1" y1="10.16" x2="2.54" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -8702,6 +8694,15 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="68.58" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 <junction x="76.2" y="30.48"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="CN1" gate="G$1" pin="TXD"/>
+<wire x1="38.1" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="12.7" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PD0(RXD)"/>
+<wire x1="20.32" y1="10.16" x2="2.54" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
