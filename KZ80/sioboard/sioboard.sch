@@ -4038,8 +4038,8 @@ naming: grid - package width</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.2032" drill="0.4064">
-<clearance class="0" value="0.2032"/>
+<class number="0" name="default" width="0.1524" drill="0.254">
+<clearance class="0" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -4087,6 +4087,7 @@ naming: grid - package width</description>
 <part name="C4" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1µF"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="J2" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="IESEL"/>
 </parts>
 <sheets>
 <sheet>
@@ -4145,8 +4146,8 @@ naming: grid - package width</description>
 <instance part="SUPPLY3" gate="G$1" x="58.42" y="25.4" smashed="yes">
 <attribute name="VALUE" x="58.42" y="28.194" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="114.3" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="114.3" y="-12.446" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="111.76" y="-5.08" smashed="yes">
+<attribute name="VALUE" x="111.76" y="-2.286" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="V2" gate="/1" x="76.2" y="68.58" smashed="yes">
 <attribute name="NAME" x="71.12" y="74.295" size="2.032" layer="95"/>
@@ -4266,6 +4267,10 @@ naming: grid - package width</description>
 <instance part="GND11" gate="1" x="-17.78" y="30.48" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="30.226" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="J2" gate="J$1" x="104.14" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="101.6" y="-25.146" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="101.6" y="-12.192" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 <bus name="Z80:A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,BUSAK,BUSRQ,CLOCK,D0,D1,D2,D3,D4,D5,D6,D7,GND,HALT,INT,IORQ,M1,MREQ,NMI,RD,RESET,RFSH,VCC,WAIT,WR">
@@ -4360,11 +4365,6 @@ naming: grid - package width</description>
 <wire x1="58.42" y1="25.4" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-<pinref part="U$2" gate="G$1" pin="IE1"/>
-<wire x1="114.3" y1="-15.24" x2="124.46" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="V2" gate="/+UB" pin="+UB"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 </segment>
@@ -4397,6 +4397,11 @@ naming: grid - package width</description>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="45.72" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+<pinref part="J2" gate="J$1" pin="3"/>
+<wire x1="111.76" y1="-5.08" x2="111.76" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4824,6 +4829,21 @@ naming: grid - package width</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="CN2" gate="G$1" pin="CTS"/>
 <wire x1="205.74" y1="12.7" x2="215.9" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="J2" gate="J$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="IE0"/>
+<wire x1="111.76" y1="-20.32" x2="124.46" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="J2" gate="J$1" pin="2"/>
+<wire x1="111.76" y1="-17.78" x2="124.46" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="IE1"/>
+<wire x1="124.46" y1="-17.78" x2="124.46" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
