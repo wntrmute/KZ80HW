@@ -162,6 +162,10 @@
 <text x="97.79" y="8.89" size="1.778" layer="22" font="vector" rot="MR270" align="center-right">BASED ON RC2014 SIO/2 DESIGN BY SPENCER OWENS</text>
 <text x="93.98" y="8.89" size="1.778" layer="22" font="vector" rot="MR270" align="center-right">ADAPTED BY K_ISOM / OAK_CA</text>
 <text x="90.17" y="8.89" size="1.778" layer="22" font="vector" rot="MR270" align="center-right">REV0/2019-10-02</text>
+<text x="78.74" y="77.47" size="1.27" layer="21" align="center-right">IESEL</text>
+<text x="68.58" y="74.93" size="1.016" layer="21" align="center-right">VCC</text>
+<text x="71.12" y="74.93" size="1.016" layer="21" align="center-right">IE1</text>
+<text x="73.66" y="74.93" size="1.016" layer="21" align="center-right">IE0</text>
 </plain>
 <libraries>
 <library name="capacitor-wima" urn="urn:adsk.eagle:library:116">
@@ -972,9 +976,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="75.438" y="61.849" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="J2" library="SparkFun-Connectors" package="1X03" value="IESEL" x="72.39" y="77.47" smashed="yes" rot="R180">
-<attribute name="NAME" x="73.66" y="76.073" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="PROD_ID" value="XXX-00000" x="72.39" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="73.66" y="79.502" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 </elements>
 <signals>
