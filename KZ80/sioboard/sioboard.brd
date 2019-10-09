@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -162,10 +162,10 @@
 <text x="97.79" y="8.89" size="1.778" layer="22" font="vector" rot="MR270" align="center-right">BASED ON RC2014 SIO/2 DESIGN BY SPENCER OWENS</text>
 <text x="93.98" y="8.89" size="1.778" layer="22" font="vector" rot="MR270" align="center-right">ADAPTED BY K_ISOM / OAK_CA</text>
 <text x="90.17" y="8.89" size="1.778" layer="22" font="vector" rot="MR270" align="center-right">REV0/2019-10-02</text>
-<text x="78.74" y="77.47" size="1.27" layer="21" align="center-right">IESEL</text>
-<text x="68.58" y="74.93" size="1.016" layer="21" align="center-right">VCC</text>
-<text x="71.12" y="74.93" size="1.016" layer="21" align="center-right">IE1</text>
-<text x="73.66" y="74.93" size="1.016" layer="21" align="center-right">IE0</text>
+<text x="74.93" y="73.66" size="1.27" layer="21" rot="R270" align="center-right">INTEN</text>
+<text x="67.31" y="74.93" size="1.016" layer="21" rot="R90" align="center-right">VCC</text>
+<text x="69.85" y="74.93" size="1.016" layer="21" rot="R90" align="center-right">IEI</text>
+<text x="72.39" y="74.93" size="1.016" layer="21" rot="R90" align="center-right">IEO</text>
 </plain>
 <libraries>
 <library name="capacitor-wima" urn="urn:adsk.eagle:library:116">
