@@ -7502,62 +7502,6 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <library name="wntrmute">
 <description>WNTRMUTE ROBOTICS parts and pieces and whatsits.</description>
 <packages>
-<package name="DIL28-3-ZIF_SOCKET">
-<description>&lt;h3&gt;ZIF Socket 28-Pin 0.3"&lt;/h3&gt;
-tDocu shows location of lever when unlocked. 
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:28&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;ZIF_SOCKET_28-3&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="1.27" width="0.2032" layer="21" curve="180"/>
-<wire x1="17.78" y1="-3.048" x2="17.78" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="3.048" x2="-17.78" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="3.048" x2="-17.526" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="-3.048" x2="-17.526" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="-3.048" x2="17.526" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="3.048" x2="17.526" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-26.111" y1="-8" x2="25.889" y2="-8" width="0.127" layer="51"/>
-<wire x1="25.889" y1="-8" x2="25.889" y2="8" width="0.127" layer="51"/>
-<wire x1="25.889" y1="8" x2="-26.111" y2="8" width="0.127" layer="51"/>
-<wire x1="-26.111" y1="8" x2="-26.111" y2="-8" width="0.127" layer="51"/>
-<wire x1="-21.59" y1="-5.08" x2="-36.83" y2="-5.08" width="0.254" layer="51" style="shortdash"/>
-<wire x1="-36.83" y1="-5.08" x2="-36.83" y2="-7.62" width="0.254" layer="51" style="shortdash"/>
-<wire x1="-36.83" y1="-7.62" x2="-21.59" y2="-7.62" width="0.254" layer="51" style="shortdash"/>
-<wire x1="-21.59" y1="-7.62" x2="-21.59" y2="-5.08" width="0.254" layer="51" style="shortdash"/>
-<pad name="1" x="-16.51" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-13.97" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="-11.43" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="-8.89" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="-6.35" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="-3.81" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7" x="-1.27" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8" x="1.27" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="9" x="3.81" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="10" x="6.35" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="11" x="8.89" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="12" x="11.43" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="13" x="13.97" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="14" x="16.51" y="-3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="15" x="16.51" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="16" x="13.97" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="17" x="11.43" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="18" x="8.89" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="19" x="6.35" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="20" x="3.81" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="21" x="1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="22" x="-1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="23" x="-3.81" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="24" x="-6.35" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="25" x="-8.89" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="26" x="-11.43" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="27" x="-13.97" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="28" x="-16.51" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-15.24" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
-<text x="-15.24" y="-1.27" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="DIL28-6" urn="urn:adsk.eagle:footprint:770/1">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
 <wire x1="-17.653" y1="-1.27" x2="-17.653" y2="-6.604" width="0.1524" layer="21"/>
@@ -7596,6 +7540,62 @@ tDocu shows location of lever when unlocked.
 <pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <text x="-17.78" y="-6.35" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-14.605" y="-0.9398" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL28-6-ZIF_SOCKET">
+<description>&lt;h3&gt;ZIF Socket 28-Pin 0.3"&lt;/h3&gt;
+tDocu shows location of lever when unlocked. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:28&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;ZIF_SOCKET_28-3&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-6.858" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="1.27" width="0.2032" layer="21" curve="180"/>
+<wire x1="17.78" y1="-6.858" x2="17.78" y2="6.858" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="6.858" x2="-17.78" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="6.858" x2="-17.526" y2="6.858" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-6.858" x2="-17.526" y2="-6.858" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="-6.858" x2="17.526" y2="-6.858" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="6.858" x2="17.526" y2="6.858" width="0.2032" layer="21"/>
+<wire x1="-26.111" y1="-9.27" x2="25.889" y2="-9.27" width="0.127" layer="51"/>
+<wire x1="25.889" y1="-9.27" x2="25.889" y2="9.27" width="0.127" layer="51"/>
+<wire x1="25.889" y1="9.27" x2="-26.111" y2="9.27" width="0.127" layer="51"/>
+<wire x1="-26.111" y1="9.27" x2="-26.111" y2="-9.27" width="0.127" layer="51"/>
+<wire x1="-21.59" y1="-6.35" x2="-36.83" y2="-6.35" width="0.254" layer="51" style="shortdash"/>
+<wire x1="-36.83" y1="-6.35" x2="-36.83" y2="-8.89" width="0.254" layer="51" style="shortdash"/>
+<wire x1="-36.83" y1="-8.89" x2="-21.59" y2="-8.89" width="0.254" layer="51" style="shortdash"/>
+<wire x1="-21.59" y1="-8.89" x2="-21.59" y2="-6.35" width="0.254" layer="51" style="shortdash"/>
+<pad name="1" x="-16.51" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-13.97" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7" x="-1.27" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="8" x="1.27" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="9" x="3.81" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="10" x="6.35" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="11" x="8.89" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="12" x="11.43" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="13" x="13.97" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="14" x="16.51" y="-7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="15" x="16.51" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="16" x="13.97" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="17" x="11.43" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="18" x="8.89" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="19" x="6.35" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="20" x="3.81" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="21" x="1.27" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="22" x="-1.27" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="23" x="-3.81" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="24" x="-6.35" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="25" x="-8.89" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="26" x="-11.43" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="27" x="-13.97" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="28" x="-16.51" y="7.62" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-15.24" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
+<text x="-15.24" y="-1.27" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -7643,7 +7643,7 @@ tDocu shows location of lever when unlocked.
 <gate name="G$1" symbol="AT28C256" x="-7.62" y="25.4"/>
 </gates>
 <devices>
-<device name="" package="DIL28-3-ZIF_SOCKET">
+<device name="" package="DIL28-6-ZIF_SOCKET">
 <connects>
 <connect gate="G$1" pin="/CE" pad="20"/>
 <connect gate="G$1" pin="/OE" pad="22"/>
@@ -7841,7 +7841,7 @@ or will meet your specific requirements.&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="U$1" library="wntrmute" deviceset="AT28C256" device="DIL28" value="AT28C256DIL28"/>
+<part name="U$1" library="wntrmute" deviceset="AT28C256" device="" value="AT28C256"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -8648,7 +8648,7 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="10.16" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="WE" class="0">
 <segment>
 <pinref part="V1" gate="/3" pin="Y"/>
 <wire x1="58.42" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
@@ -8664,7 +8664,7 @@ or will meet your specific requirements.&lt;p&gt;
 <junction x="71.12" y="35.56"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="OE" class="0">
 <segment>
 <pinref part="V1" gate="/2" pin="Y"/>
 <wire x1="43.18" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
@@ -8680,7 +8680,7 @@ or will meet your specific requirements.&lt;p&gt;
 <junction x="73.66" y="33.02"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="CE" class="0">
 <segment>
 <pinref part="V1" gate="/1" pin="Y"/>
 <wire x1="30.48" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
